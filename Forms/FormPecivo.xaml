@@ -1,0 +1,24 @@
+﻿<Window x:Class="PekaraWPF.Forms.FormPecivo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PekaraWPF.Forms"
+        mc:Ignorable="d"
+        Title="Dodavanje i Izmena (PECIVO)" Height="350" Width="300">
+    <Grid>
+        <Label Content="Ime:" HorizontalAlignment="Left" Margin="40,30,0,0" VerticalAlignment="Top" />
+        <Label Content="Cena:" HorizontalAlignment="Left" Margin="40,90,0,0" VerticalAlignment="Top" />
+        <Label Content="Kolicina:" HorizontalAlignment="Left" Margin="40,150,0,0" VerticalAlignment="Top" />
+        <Label Content="Tip :" HorizontalAlignment="Left" Margin="40,210,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="txtIme" HorizontalAlignment="Left" Margin="100,35,0,0" Height="23"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCena" HorizontalAlignment="Left" Margin="100,95,0,0" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtKolicina" HorizontalAlignment="Left" Margin="100,155,0,0" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbTipPeciva" HorizontalAlignment="Left" Margin="100,215,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="nazivTipaPeciva" SelectedValuePath="tipPecivaID"/>
+
+        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="32,294,0,0" VerticalAlignment="Top" Width="75" Click="btnOK_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="177,294,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+
+
+    </Grid>
+</Window>

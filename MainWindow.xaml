@@ -1,0 +1,26 @@
+﻿<Window x:Class="PekaraWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PekaraWPF"
+        mc:Ignorable="d"
+        Title="Pekara" Height="600" Width="800">
+    <Grid Background="BurlyWood">
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" IsReadOnly="True"
+          AlternatingRowBackground="Beige" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel x:Name="stackPanelTop" HorizontalAlignment="Center" VerticalAlignment="Top" Width="auto" Orientation="Horizontal" Height="40">
+            <Button x:Name="btnKupac" Content="Kupci" Width="100" Click="btnKupac_Click"/>
+            <Button x:Name="btnPecivo" Content="Peciva" Width="100" Click="btnPecivo_Click"/>
+            <Button x:Name="btnPice" Content="Pica" Width="100" Click="btnPice_Click"/>
+            <Button x:Name="btnZaposleni" Content="Zaposleni" Width="100" Click="btnZaposleni_Click"/>
+            <Button x:Name="btnNarudzbina" Content="Narudzbine" Width="100" Click="btnNarudzbina_Click"/>
+        </StackPanel>
+
+        <StackPanel x:Name="stackPanelBottom" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="auto" Orientation="Horizontal" Height="40" >
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="180" Click="btnDodaj_Click" Margin="0,0,30,0"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="180" Click="btnIzmeni_Click" Margin="0,0,30,0"/>
+            <Button x:Name="btnObrisi" Content="Obriši" Width="180" Click="btnObrisi_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
